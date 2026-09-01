@@ -20,20 +20,27 @@ stored in FASTA format.
 - Generates nucleotide composition graph
 
 ## Project Structure
-fasta-sequence-analyzer/
-│
-├── data/
-│   └── sequence.fasta
-│
-├── results/
-│   ├── sequence_analysis.csv
-│   ├── summary.txt
-│   ├── gc_content.png
-│   ├── sequence_lengths.png
-│   └── nucleotide_composition.png
-│
-├── analyze.py
-└── README.md
+                  FASTA SEQUENCE ANALYZER
+                           │
+                    sequence.fasta
+                           │
+                           ▼
+                    ┌─────────────┐
+                    │  analyze.py │
+                    └──────┬──────┘
+                           │
+             ┌─────────────┼─────────────┐
+             ▼             ▼             ▼
+        GC Content    Sequence Length   Nucleotide
+                                         Composition
+             │             │             │
+             └─────────────┼─────────────┘
+                           ▼
+                       RESULTS
+                           │
+             ┌─────────────┼─────────────┐
+             ▼             ▼             ▼
+           CSV           Summary        Plots
 ## Technologies Used
 
 - Python
