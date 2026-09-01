@@ -1,0 +1,19 @@
+FASTA SEQUENCE ANALYSIS SUMMARY
+===============================
+
+Total Sequences: 6
+Average Length: 601.83
+Minimum Length: 576
+Maximum Length: 628
+Standard Deviation of Length: 22.24
+
+Shortest Sequence: NM_000517.6 - 576
+Longest Sequence: NM_000518.5 - 628
+
+Average GC Content: 55.57%
+Minimum GC Content: 50.65%
+Maximum GC Content: 64.47%
+Standard Deviation of GC Content: 6.27%
+
+Duplicate IDs: None
+Invalid Sequences: None
