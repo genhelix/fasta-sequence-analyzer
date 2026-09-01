@@ -20,9 +20,8 @@ stored in FASTA format.
 - Generates nucleotide composition graph
 
 ## Project Structure
-
 fasta-sequence-analyzer/
-
+│
 ├── data/
 │   └── sequence.fasta
 │
@@ -33,12 +32,8 @@ fasta-sequence-analyzer/
 │   ├── sequence_lengths.png
 │   └── nucleotide_composition.png
 │
-├── scripts/
-│
 ├── analyze.py
-├── test.txt
 └── README.md
-
 ## Technologies Used
 
 - Python
