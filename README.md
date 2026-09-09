@@ -14,31 +14,6 @@ A Python-based bioinformatics tool that reads DNA sequences from a FASTA file an
 - Saves a dataset-level summary to a text file
 - Generates GC content, sequence length, and nucleotide composition plots
 
-<<<<<<< HEAD
-## Project Structure
-                  FASTA SEQUENCE ANALYZER
-                           │
-                    sequence.fasta
-                           │
-                           ▼
-                    ┌─────────────┐
-                    │  analyze.py │
-                    └──────┬──────┘
-                           │
-             ┌─────────────┼─────────────┐
-             ▼             ▼             ▼
-        GC Content    Sequence Length   Nucleotide
-                                         Composition
-             │             │             │
-             └─────────────┼─────────────┘
-                           ▼
-                       RESULTS
-                           │
-             ┌─────────────┼─────────────┐
-             ▼             ▼             ▼
-           CSV           Summary        Plots
-## Technologies Used
-=======
 # Workflow
               FASTA SEQUENCE ANALYZER
                        │
@@ -81,7 +56,6 @@ Python 3.12.4
 Biopython
 NumPy
 Matplotlib
->>>>>>> b76652e (Documents edited)
 
 # Installation
 Clone the repository:
@@ -129,12 +103,4 @@ Distributed under the MIT License.
 
 ## Author
 
-<<<<<<< HEAD
-The program generates:
-
-- GC content graph
-- Sequence length graph
-- Nucleotide composition graph
-=======
-- **Anchal Joshi** - [GitHub Profile](https://github.com/anchal-bio)
->>>>>>> b76652e (Documents edited)
+- **Anchal** - [GitHub Profile](https://github.com/anchal-bio)
