@@ -1,24 +1,20 @@
-# FASTA Sequence Analyzer
+## FASTA Sequence Analyzer
 
-A Python-based bioinformatics project for analyzing DNA sequences
-stored in FASTA format.
+A Python-based bioinformatics tool that reads DNA sequences from a FASTA file and generates a full statistical report that includes per-sequence metrics, dataset-level summary statistics, and visualizations.
 
-## Features
-
-- Reads DNA sequences from a FASTA file
+# Features
+- Reads DNA sequences from a multi-FASTA file
 - Calculates sequence length
-- Calculates GC content
-- Calculates AT content
-- Counts A, T, G and C nucleotides
-- Validates DNA sequences
+- Calculates GC content and AT content
+- Counts A, T, G, and C nucleotides per sequence
+- Validates that sequences contain only standard DNA bases
 - Detects duplicate sequence IDs
-- Calculates sequence statistics using NumPy
-- Saves results in CSV format
-- Saves analysis summary in a text file
-- Generates GC content graph
-- Generates sequence length graph
-- Generates nucleotide composition graph
+- Calculates dataset-level statistics (mean, min, max, standard deviation)    using NumPy
+- Saves per-sequence results to a CSV file
+- Saves a dataset-level summary to a text file
+- Generates GC content, sequence length, and nucleotide composition plots
 
+<<<<<<< HEAD
 ## Project Structure
                   FASTA SEQUENCE ANALYZER
                            │
@@ -42,51 +38,103 @@ stored in FASTA format.
              ▼             ▼             ▼
            CSV           Summary        Plots
 ## Technologies Used
+=======
+# Workflow
+              FASTA SEQUENCE ANALYZER
+                       │
+                sequence.fasta
+                       │
+                       ▼
+                ┌─────────────┐
+                │  analyze.py │
+                └──────┬──────┘
+                       │
+         ┌─────────────┼─────────────┐
+         ▼             ▼             ▼
+    GC Content    Sequence Length   Nucleotide
+                                     Composition
+         │             │             │
+         └─────────────┼─────────────┘
+                       ▼
+                   RESULTS
+                       │
+         ┌─────────────┼─────────────┐
+         ▼             ▼             ▼
+       CSV           Summary        Plots
 
-- Python
-- Biopython
-- NumPy
-- Matplotlib
-- CSV
+# Project Structure
+fasta-sequence-analyzer/
+├── analyze.py
+├── requirements.txt
+├── README.md
+├── data/
+│   └── sequence.fasta
+└── results/            (created automatically when you run the script)
+    ├── sequence_analysis.csv
+    ├── summary.txt
+    ├── gc_content.png
+    ├── sequence_lengths.png
+    └── nucleotide_composition.png
 
-## How to Run
+# Technologies Used
+Python 3.12.4
+Biopython
+NumPy
+Matplotlib
+>>>>>>> b76652e (Documents edited)
 
-Run the following command from the project folder:
+# Installation
+Clone the repository:
+   git clone https://github.com/anchal-bio/fasta-sequence-analyzer.git
+   cd fasta-sequence-analyzer
+
+Install the dependencies:
+   pip install -r requirements.txt
+
+# How to Run
+
+Place your FASTA file at data/sequence.fasta, then run:
 
 python analyze.py
 
-## Input
+The results/ folder is created automatically if it doesn't already exist.
 
-The program takes a multi-FASTA file as input:
+# Input
 
-data/sequence.fasta
+A multi-FASTA file at data/sequence.fasta.
 
-## Output
+# Output
 
-The analysis results are saved inside the `results` folder.
+All results are saved inside the results/ folder.
 
-### CSV
+- sequence_analysis.csv — per-sequence data:
 
-sequence_analysis.csv
+* Sequence ID
+* Sequence length
+* GC content
+* AT content
+* A, T, G, and C counts
 
-Contains:
+- summary.txt — dataset-level statistics: total sequence count, average/min/max/standard deviation of length and GC content, shortest and longest sequence, duplicate IDs, and invalid sequences.
 
-- Sequence ID
-- Sequence length
-- GC content
-- AT content
-- A, T, G and C counts
+- Plots:
 
-### Summary
+* gc_content.png — GC content per sequence
+* sequence_lengths.png — length per sequence
+* nucleotide_composition.png — A/T/G/C composition per sequence
 
-summary.txt
+## License
 
-Contains overall statistics of the FASTA dataset.
+Distributed under the MIT License.
 
-### Graphs
+## Author
 
+<<<<<<< HEAD
 The program generates:
 
 - GC content graph
 - Sequence length graph
 - Nucleotide composition graph
+=======
+- **Anchal Joshi** - [GitHub Profile](https://github.com/anchal-bio)
+>>>>>>> b76652e (Documents edited)
