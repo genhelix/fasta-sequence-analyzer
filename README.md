@@ -38,18 +38,20 @@ A Python-based bioinformatics tool that reads DNA sequences from a FASTA file an
        CSV           Summary        Plots
 
 # Project Structure
+```
 fasta-sequence-analyzer/
 ├── analyze.py
 ├── requirements.txt
 ├── README.md
 ├── data/
 │   └── sequence.fasta
-└── results/            (created automatically when you run the script)
+└── results/                    (created automatically when you run the script)
     ├── sequence_analysis.csv
     ├── summary.txt
     ├── gc_content.png
     ├── sequence_lengths.png
     └── nucleotide_composition.png
+```
 
 # Technologies Used
 Python 3.12.4
@@ -59,7 +61,7 @@ Matplotlib
 
 # Installation
 Clone the repository:
-   git clone https://github.com/anchal-bio/fasta-sequence-analyzer.git
+   git clone https://github.com/genhelix/fasta-sequence-analyzer.git
    cd fasta-sequence-analyzer
 
 Install the dependencies:
